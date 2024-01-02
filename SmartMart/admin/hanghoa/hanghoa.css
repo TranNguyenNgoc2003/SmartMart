@@ -1,0 +1,124 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+}
+:root{
+    --color-icon:rgb(255, 255, 255);
+    --color-item-text: rgb(81, 81, 81);
+
+    --background:  rgb(227, 227, 227);
+    --background-menu:  rgb(136, 0, 199);
+    
+    --bg-color-header: rgb(247, 190, 190);
+    --bg-color-item:  rgb(243, 243, 243);
+    
+
+    --font-size-item-text: 16px;
+
+    --border-radius: 6px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom-right-radius: 18px;
+    padding-right: 12px;
+    margin-right: -12px;
+}
+#bg-left{
+    margin-left: -12px;
+    width: 300px;
+    background-color: var(--background-menu) ;
+    height: 100%;
+}
+.logo{
+    width: 50px;
+    padding: 20px;
+    display: flex;
+}
+.logo .img_logo img{
+    width: 50px;
+}
+.logo .name_logo h3{
+    width: 200px;
+    margin-top: 5px;
+    margin-left: 10px;
+
+}
+.logo .name_logo h3 a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.user_name{
+    margin-top: 6px;
+    padding-top: 15px;
+    display: flex;
+}
+.user_name a{
+    display: flex;
+    font-size: 25px;
+    background-color: var(--background-menu);
+    padding: 10px 20px;
+    border-radius: 18px;
+    height: 50px;
+    color: var(--color-icon);
+    text-decoration: none;
+}
+.user_name a:hover{
+    text-decoration: underline;
+}
+
+.line_menu{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.line_menu hr{
+    width: 100%;
+    height: 3px;
+    margin-top: 12px;
+    color: white;
+    
+}
+.line_menu .text{
+    text-align: center;
+    font-weight: bold;
+    padding: 0px 5px;
+    color: white;
+    width: 100%;
+}
+
+.list_menu ul{
+    list-style: none;
+}
+.list_menu a{
+    text-decoration: none;
+}
+.list_menu .item{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    color: white;
+}
+.list_menu .item:hover{
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.list_menu .item .icon{
+    font-size: 20px;
+}
+.list_menu .item .text{
+    margin-top: 4px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.content{
+    border:2px solid var(--background-menu);
+    border-radius: 18px;
+    margin-left: 20px;
+    padding: 20px;
+}
+.content label{
+  width: 200px;
+}
