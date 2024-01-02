@@ -1,0 +1,241 @@
+*{
+    margin: 0; padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+:root{
+    --font-size_menu: 16px;
+    --font-size_header: 18px;
+    --font-size_text_kanji: 16px;
+    --font-size_text: 16px;
+    --font-size_item_menu: 14px;
+    --font-size_item_comment: 14px;
+    
+    --color-text_grey_1: rgb(142, 142, 142);
+    --color-text_white_1: rgb(255, 255, 255);
+    --color-text_navy: navy;
+    --color-text_black: black;
+
+    --color-bg-grey_1:rgb(115, 115, 115);
+    --color-bg-blue_1:rgb(223, 245, 245);
+    --color-bg-blue_2:rgb(196, 246, 230);
+    --color-bg-green_1:rgb(146, 251, 146);
+    --color-bg-green_2:rgb(219, 251, 146);
+    --color-bg-gold_1:rgb(243, 235, 125);
+    --color-bg-gold_2:rgb(243, 188, 125);
+    --color-bg-white_1:rgb(254, 253, 243);
+
+    --border-radius: 8px;
+
+    --list_menu:rgb(0, 0, 255);
+}
+.bar{
+    height: 50px;
+}
+.menu{
+    margin-top: 20px;
+    font-size: var(--font-size_menu);
+}
+
+.menu_bar{
+    width: 100%;
+    height: 40px;
+}
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+    margin-left: -25px;
+}
+
+.menu_bar li{
+    margin-top: 8px;
+    margin-right: 10px;
+}
+.menu_bar a{
+    color: black;
+    text-decoration: none; 
+    padding: 0px 10px 0px 10px;
+    margin-left: 0px;
+}
+.menu_bar li hr{
+    width:90%; 
+    height: 3px;     
+    margin: 6px auto;
+    background-color: #ffffff; 
+    transition: 0.5s;
+}
+
+.menu_bar li:hover hr{
+   background-color: rgb(0, 0, 0);
+   
+}
+
+
+#Tai_Lieu .menu_bar #dropdownId{
+    color: black;
+}
+#Tai_Lieu .menu_bar .dropdown-item{
+    font-size: var(--font-size_item_menu);
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.content .content_left{
+    width: 76%;
+}
+.content .content_left h2{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.content .content_left .col_kanji{
+    display: flex;
+    justify-content: space-between;
+}
+.content .content_left .col_kanji .item_kanji{
+    width: 18%;
+    padding: 5px;
+    text-align: center;
+    border-radius: var(--border-radius);
+}
+.content .content_left .col_kanji .item_kanji img{
+    width: 90%;
+}
+.content .content_left .col_kanji .item_kanji .text{
+    width: 100%;
+    font-size: var(--font-size_text_kanji);
+}
+
+.content .content_left .col_kanji #item_1{
+    border:3px solid var(--color-bg-blue_2);
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg-blue_2);
+}
+.content .content_left .col_kanji #item_1:hover{
+    border:3px solid var(--color-bg-grey_1);
+    transition: 0.4s;
+}
+.content .content_left .col_kanji #item_2{
+    border:3px solid var(--color-bg-green_1);
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg-green_1);
+}
+.content .content_left .col_kanji #item_2:hover{
+    border:3px solid var(--color-bg-grey_1);
+    transition: 0.4s;
+}
+.content .content_left .col_kanji #item_3{
+    border:3px solid var(--color-bg-green_2);
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg-green_2);
+}
+.content .content_left .col_kanji #item_3:hover{
+    border:3px solid var(--color-bg-grey_1);
+    transition: 0.4s;
+}
+.content .content_left .col_kanji #item_4{
+    border:3px solid var(--color-bg-gold_1);
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg-gold_1);
+}
+.content .content_left .col_kanji #item_4:hover{
+    border:3px solid var(--color-bg-grey_1);
+    transition: 0.4s;
+}
+.content .content_left .col_kanji #item_5{
+    border:3px solid var(--color-bg-gold_2);
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg-gold_2);
+}
+.content .content_left .col_kanji #item_5:hover{
+    border:3px solid var(--color-bg-grey_1);
+    transition: 0.4s;
+}
+
+
+.content .content_right{
+    width: 22%;
+}
+
+
+
+
+.giaoTrinh{
+    background-color: rgb(244, 244, 244);
+    padding: 10px 30px;
+}
+
+.giaoTrinh .list_giaoTrinh .header{
+    margin-left: -32px;
+    font-weight: bold;
+    font-size: var(--font-size_header);
+}
+.giaoTrinh:hover{
+    transition: 0.4s;
+    box-shadow: 5px 5px 5px rgb(181, 181, 181);
+
+}
+.giaoTrinh:hover h4 {
+    color: navy;
+
+}
+.giaoTrinh .list_giaoTrinh .header a{
+    color: var(--color-text_grey_1);
+    text-decoration: none;
+}
+.giaoTrinh .list_giaoTrinh li a{
+    font-size: var(--font-size_text);
+    text-decoration: none;
+    color: black;
+}
+.giaoTrinh .list_giaoTrinh li a:hover{
+    font-size: var(--font-size_text);
+    text-decoration: underline;
+    color: navy;
+    padding-left: 5px;
+    transition: 0.4s;
+}
+
+
+/*  */
+/*  */
+/*  */
+.Information{
+    background-color: rgb(244, 244, 244);
+    text-align: center;
+    border-bottom: 7px solid black;
+    height: 160px;
+}
+.Information .infocomment{
+    padding-top: 15px;
+}
+.Information .item_info{
+    padding-top: 5px;
+    font-size: var(--font-size_item_comment);
+}
+.Information .item_logo{
+    padding-top: 20px;
+    font-size: 30px;
+}
+.Information .item_logo i{
+    color: rgba(0, 0, 0, 0.616);
+}
+.Information .item_logo:hover i{
+    color: rgba(0, 0, 255, 0.685);
+    transition: 0.3s;
+}
+
+.Information .logo_bar{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.Information .logo_bar img{
+    width: 40px;
+    margin-top: -7px;
+}

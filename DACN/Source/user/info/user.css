@@ -1,0 +1,131 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+}
+:root{
+    --color-icon:red;
+    --color-item-text: rgb(81, 81, 81);
+
+    --bg-color-header: rgb(247, 190, 190);
+    --bg-color-item:  rgb(243, 243, 243);
+
+    --font-size-item-text: 16px;
+
+    --border-radius: 6px;
+}
+.header{
+    display: flex;
+    margin-top: 10px;
+    padding: 20px;
+    border: 2px solid rgb(126, 126, 126);
+    border-radius: 8px;
+}
+.logo{
+    display: flex;
+}
+.logo .img_logo img{
+    width: 50px;
+}
+.user_name{
+    margin-top: 6px;
+    width: 50px;
+    justify-content: end;
+    display: flex;
+}
+.user_name a{
+    font-size: 25px;
+    color: var(--color-icon);
+}
+.user_name a:hover{
+    position: absolute;
+    border-bottom: 4px solid rgb(255, 0, 0);
+    transition: 0.1s;
+}
+.search{
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 20px;
+    justify-content: end;
+    display: flex;
+}
+.content{
+    display: flex;
+}
+.menu{
+    display: flex;
+}
+.menu #item{
+    margin-top: 20px;
+    margin-right: 250px;
+}
+.menu #item a{
+    color: var(--color-item-text);
+    text-decoration: none;
+}
+.menu #item:hover a{
+    color: red;
+    transition: 0.3s;
+}
+.content .left{
+    width: 200px;
+    border-right: 1px solid rgb(181, 181, 181);
+}
+.content .left .item{
+    margin-top: 20px;
+}
+.content .left .item a{
+    color: var(--color-item-text);
+    text-decoration: none;
+}
+.content .left .item:hover a{
+    color: red;
+    transition: 0.3s;
+}
+
+.content .right .info{
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+}
+.content .right .item{
+    width: 150px;
+}
+
+
+/*  */
+/*  */
+/*  */
+.Information{
+    background-color: rgb(244, 244, 244);
+    text-align: center;
+    border-bottom: 7px solid red;
+    height: 160px;
+}
+.Information .infocomment{
+    padding-top: 15px;
+}
+.Information .item_info{
+    padding-top: 5px;
+    font-size: var(--font-size_item_comment);
+}
+.Information .item_logo{
+    padding-top: 20px;
+    font-size: 30px;
+}
+.Information .item_logo i{
+    color: rgba(0, 0, 0, 0.616);
+}
+.Information .item_logo:hover i{
+    color: rgba(0, 0, 255, 0.685);
+    transition: 0.3s;
+}
+
+.Information .logo_bar{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.Information .logo_bar img{
+    width: 40px;
+    margin-top: -17px;
+}

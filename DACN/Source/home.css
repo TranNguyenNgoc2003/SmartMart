@@ -1,0 +1,123 @@
+*{
+    margin: 0; padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+:root{
+    --font-size_menu: 16px;
+    --font-size_header: 18px;
+    --font-size_text: 16px;
+    --font-size_item_menu: 14px;
+    --font-size_item_comment: 14px;
+    
+    --color-text_grey_1: rgb(142, 142, 142);
+    --color-text_white_1: rgb(255, 255, 255);
+    --color-text_navy: navy;
+
+    --color-bg-grey_1:rgb(115, 115, 115);
+
+    --border-radius: 8px;
+
+    --list_menu:rgb(0, 0, 255);
+}
+.bar{
+    height: 50px;
+}
+.menu{
+    margin-top: 20px;
+    font-size: var(--font-size_menu);
+}
+
+.menu_bar{
+    width: 100%;
+    height: 40px;
+}
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+    margin-left: -25px;
+}
+
+.menu_bar li{
+    margin-top: 8px;
+    margin-right: 10px;
+}
+.menu_bar a{
+    color: black;
+    text-decoration: none; 
+    padding: 0px 10px 0px 10px;
+    margin-left: 0px;
+}
+.menu_bar li hr{
+    width:90%; 
+    height: 3px;     
+    margin: 6px auto;
+    background-color: #ffffff; 
+    transition: 0.5s;
+}
+
+.menu_bar li:hover hr{
+   background-color: rgb(0, 0, 0);
+   
+}
+
+.content_left .gioiThieu .gt_header{
+    font-weight: bold;
+    color: var(--color-text_grey_1);
+    font-size: var(--font-size_header);
+}
+
+.content_left .gioiThieu .gt_text{
+    font-size: var(--font-size_text);
+}
+
+.content_right .menu_home .list_menu .list-group-item a{
+    text-decoration: none;
+    color: black;
+}
+.content_right .menu_home .list_menu .list-group-item:hover{
+    border-bottom: 2px solid var(--list_menu);
+    padding-left: 5px;
+}
+.content_right .menu_home .list_menu .list-group-item:hover a{
+    color: var(--list_menu);
+}
+/*  */
+/*  */
+/*  */
+.Information{
+    background-color: rgb(244, 244, 244);
+    text-align: center;
+    border-bottom: 7px solid black;
+    height: 160px;
+}
+.Information .infocomment{
+    padding-top: 15px;
+}
+.Information .item_info{
+    padding-top: 5px;
+    font-size: var(--font-size_item_comment);
+}
+.Information .item_logo{
+    padding-top: 20px;
+    font-size: 30px;
+}
+.Information .item_logo i{
+    color: rgba(0, 0, 0, 0.616);
+}
+.Information .item_logo:hover i{
+    color: rgba(0, 0, 255, 0.685);
+    transition: 0.3s;
+}
+
+.Information .logo_bar{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.Information .logo_bar img{
+    width: 40px;
+    margin-top: -7px;
+}
+
